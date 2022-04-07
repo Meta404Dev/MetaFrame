@@ -1,0 +1,1 @@
+﻿[{"id":"1","name":"Monster1","attack":"10","health":"50","speed":"10","isBoss":"False"},{"id":"2","name":"Monster2","attack":"20","health":"50","speed":"10","isBoss":"False"},{"id":"3","name":"Boss1","attack":"50","health":"200","speed":"20","isBoss":"True"},{"id":"4","name":"Boss2","attack":"100","health":"200","speed":"20","isBoss":"True"}]

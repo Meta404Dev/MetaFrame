@@ -1,0 +1,42 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
+using XFramework.ExcelData;
+
+/// <summary>
+/// Auto Generate Class!!!
+/// </summary>
+[System.Serializable]
+public class {0} : ExcelDataItemBase
+{
+{2}
+    public int ID { get { return id; } }
+}
+
+/// <summary>
+/// Auto Generate Class!!!
+/// </summary>
+public class {1} : ExcelDataTableBase<{0}>
+{
+    public override void Init(string json)
+    {
+        object jsonObj = LitJson.JsonMapper.ToObject(json);
+        List<Dictionary<string, string>> allDataList = jsonObj as List<Dictionary<string, string>>;
+
+        List<{0}> list = new List<{0}>();
+        for (int i = 0; i < allDataList.Count; i++)
+        {
+            Dictionary<string, string> data = allDataList[i];
+
+            {0} item = new {0}()
+            {
+{3}
+            };
+            list.Add(item);
+        }
+
+        datas = list.ToArray();
+    }
+}
